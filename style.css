@@ -57,23 +57,20 @@ a:hover{
 nav ul {
   list-style: none;
   overflow: hidden;
-  /* background-color: #111; */
+}
+
+nav li a, .drop-down {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
 }
 
 nav li {
   float: left;
 }
 
-nav li a, .drop-down {
-  display: inline-block;
-  color: white;
-  /* text-align: center; */
-  /* padding: 14px 16px; */
-  text-decoration: none;
-}
-
 .plannets:hover{
-  background-color: #575757;
+  background-color: #6a6868;
 }
 
 .plannets {
@@ -83,26 +80,26 @@ nav li a, .drop-down {
 .more-plannets {
   display: none;
   position: absolute;
-  background-color: #1a1a1a;
+  box-shadow: 0px 9px 17px 0px rgba(2, 2, 2, 0.2);
+  background-color: #1d1d1d;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-}
-
-.more-plannets a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.more-plannets a:hover {
-  background-color: #575757;
 }
 
 .plannets:hover .more-plannets {
   display: block;
+}
+
+.more-plannets a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 16px;
+  text-align: left;
+  display: block;
+}
+
+.more-plannets a:hover {
+  background-color: #636363;
 }
 
 .navLinks {
@@ -114,6 +111,7 @@ nav li a, .drop-down {
   color: rgb(239, 231, 231);
   margin-left: 25vw;
 }
+
 
 .copyright {
   cursor: pointer;
@@ -1011,7 +1009,7 @@ nav li a, .drop-down {
   color: #060606;
   padding-left: 0.3vw;
   height: 9.5vh;
-  width: 35.6svw;
+  width: 35.6vw;
   position: relative;
   left: 27vw;
   top: 6vw;
